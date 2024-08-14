@@ -192,17 +192,17 @@
             <div class="form-container mx-auto">
                 <form action="#" id="myForm">
                     <div class="inputbox">
-                        <input type="text" placeholder="full name"/>
-                        <input type="tel" placeholder="phone number"/>
+                        <input type="text" name="name" placeholder="full name"/>
+                        <input type="tel" name="phone" placeholder="phone number"/>
                     </div>
-                    <input type="email" placeholder="email address"/>
+                    <input type="email" name="email" placeholder="email address"/>
                     <textarea 
                     name="" 
                     id=""
                     cols=""
                     rows=""
                     placeholder="message"></textarea>
-                    <input type="submit" value="send"/>
+                    <input type="submit" value="send" onclick="submitForm()"/>
                 </form>
             </div>
      </section>
