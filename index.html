@@ -24,16 +24,16 @@
  <header class="header fixed-top">
  <a href="#" class="logo">Haven interiors</a>
 
- <nav>
-    <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#service">Services</a></li>
-        <li><a href="#project">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
+ <nav class="sidebar">
+        <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#service">Services</a></li>
+      <li><a href="#project">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+  </ul>
   </nav>
- <div class="fas fa-bars"></div>
+  <div onclick="myFunction()" id="fabars" class="fas fa-bars"></div>
 </header>
 
 <!-- header section ends -->
@@ -44,7 +44,6 @@
     <div class="row hero">
         
         <div class="col pl-3 ml-sm-5 p-0">
-            <!-- <div> <img src="./images/home.jpg" alt=""></div> -->
             <h1 class="text1">Haven Interiors</h1>
             <h3 class="text2">Interior Services</h3>
         </div>
@@ -52,19 +51,19 @@
 
     <div class="counting">
         <div class="box">
-            <h1 class="count" data-val="100">0</h1>
+            <h1 class="count" data-val="100">100+</h1>
             <h3>Services</h3>
         </div>
         <div class="box">
-            <h1 class="count" data-val="26">0</h1>
+            <h1 class="count" data-val="22">22+</h1>
             <h3>Awards</h3>
         </div>
         <div class="box">
-            <h1 class="count" data-val="658">0</h1>
+            <h1 class="count" data-val="1234">1234+</h1>
             <h3>Clients</h3>
         </div>
         <div class="box">
-            <h1 class="count" data-val="1535">0</h1>
+            <h1 class="count" data-val="1535">1535+</h1>
             <h3>Projects</h3>
         </div>
     </div>
@@ -190,19 +189,19 @@
                </div>
         </div>
             <div class="form-container mx-auto">
-                <form action="mailto:rasivijay111@gmail.com"  method="post" enctype="text/plain" id="myForm">
+                <form action="#">
                     <div class="inputbox">
-                        <input type="text" name="name" placeholder="full name"/>
-                        <input type="tel" name="phone" placeholder="phone number"/>
+                        <input type="text" placeholder="full name"/>
+                        <input type="tel" placeholder="phone number"/>
                     </div>
-                    <input type="email" name="email" placeholder="email address"/>
+                    <input type="email" placeholder="email address"/>
                     <textarea 
                     name="" 
                     id=""
                     cols=""
                     rows=""
                     placeholder="message"></textarea>
-                    <input type="submit" value="send" onclick="submitForm()"/>
+                    <input type="submit" value="send"/>
                 </form>
             </div>
      </section>
@@ -242,7 +241,7 @@
                 <input type="submit" value="subscribe"/>
               </div>
             </div>
-          <h1 class="credit"> created by <span>Haven Interiors</span>| all rights reserved</h1>
+          <p> created by <span>Haven Interiors</span> | all rights reserved</p>
           </section>
 
       <!-- Footer section ends -->
