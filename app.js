@@ -1,4 +1,10 @@
-
+function myFunction() {
+  var navtoggle = document.getElementById("fabars");
+  navtoggle.classList.toggle("fa-xmark");
+  
+  const show =document.querySelector('.sidebar');
+show.style.right= show.style.right=='0px'? '-120%': '0'
+ }
 
 let valueDisplays = document.querySelectorAll(".count");
 let interval = 4000;
@@ -18,31 +24,28 @@ valueDisplays.forEach((valueDisplay) => {
 
 
 function validateForm(form) {
-  const name = form.name.value;
-  const email = form.email.value;
-  const emailRegex = /^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$/;
-
-  if (!name || !email) {
-    alert('Please fill out all required fields');
-    return false;
+    const name = form.name.value;
+    const email = form.email.value;
+    const emailRegex = /^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$/;
+  
+    if (!name || !email) {
+      alert('Please fill out all required fields');
+      return false;
+    }
+  
+    if (!emailRegex.test(email)) {
+      alert('Please enter a valid email address');
+      return false;
+    }
+  
+    return true;
   }
-
-  if (!emailRegex.test(email)) {
-    alert('Please enter a valid email address');
-    return false;
+  
+  function submitForm() {
+    const form = document.getElementById('myForm');
+    if (!validateForm(form)) {
+      return;
+    }
+    form.submit();
   }
-
-  return true;
-}
-
-function submitForm() {
-  const form = document.getElementById('myForm');
-  if (!validateForm(form)) {
-    return;
-  }
-  form.submit();
-}
-
-
-
-
+  
