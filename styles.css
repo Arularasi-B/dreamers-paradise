@@ -54,8 +54,9 @@
             font-size: 2.5rem;
             color: #666;
             cursor: pointer;
-            display: none;
+            display:none;
          }
+
          .home .hero {
             min-height: 60rem;
             background: url(./images/home.jpg);
@@ -392,5 +393,86 @@
             background: #4070f4;
             box-shadow:  0 0.3rem 0.5rem rgba(0,0,0,0.5);
             width: 10rem;
-            color:#111; 
+            color:white; 
         }
+
+       .footer span{
+        color: #4070f4;
+       }
+
+       ::-webkit-scrollbar{
+        width: 0.8rem;
+       }
+
+       ::-webkit-scrollbar-track{
+       background-color: white;
+       }
+       
+       ::-webkit-scrollbar-thumb{
+        background-color: #4070f4;
+        border-radius: 0.3rem;
+        }
+
+        .header .fa-xmark{
+            transform: rotate(180deg);
+
+        }
+
+    @media(max-width: 768px){
+        html{
+            font-size: 50%;
+        }
+        .header .fa-bars{
+            display: block;
+        }
+        .header nav{
+            position: fixed;
+            top: 6rem;
+            right:-120%;
+            height:calc(100vh - 6rem);
+            width:100vw;
+            z-index: 1000;
+            background-color: rgba(0,0,0,0.1);
+            border-top: 0.1rem solid rgba(0,0,0,0.3);
+        }
+
+        .header nav ul {
+             height:100%;
+            width:33rem;
+            background-color: #ccc;
+            flex-flow: column;
+            justify-content: center;
+            float: right;
+        }
+        .header nav ul li{
+            margin: 1rem 0;
+
+        }
+        .header nav ul li a{
+            display: block;
+            padding: 0.5rem 0;
+            border: 0.1rem solid rgba(0,0,0,0.3);
+            border-radius: 5rem;
+            width: 25rem;
+            text-align: center;
+        }
+        .header nav ul li a:hover{
+            background-color: #000;
+            color: white;
+
+    }
+
+    }
+
+    @media(max-width: 400px){
+
+        .home .hero .text1{
+            font-size: 3.5rem;
+            width:33rem;
+        }
+        .home .hero .text2{
+            font-size: 2.5rem;
+            width:30rem;
+        }
+    }
+
