@@ -439,7 +439,7 @@
         .header nav ul {
              height:100%;
             width:33rem;
-            background-color: #ccc;
+            background-color: #62a5f8;
             flex-flow: column;
             justify-content: center;
             float: right;
@@ -452,6 +452,7 @@
             display: block;
             padding: 0.5rem 0;
             border: 0.1rem solid rgba(0,0,0,0.3);
+            background-color: #fff;
             border-radius: 5rem;
             width: 25rem;
             text-align: center;
