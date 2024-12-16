@@ -102,12 +102,13 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    width: 30rem;
 }
 .home .counting .box{
 
     margin: 2rem 4rem;
     text-align: center;
+    width: 30rem;
+
 }
 .home .counting .count{
     font-size: 7rem;
